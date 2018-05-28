@@ -1,0 +1,106 @@
+/****** MAPERR.RH ***************  Belenkov O.V. ****** 28/07/16 ***
+******* MAPERR.RH ***************  Kruzhkov A.E. ****** 02/09/16 ***
+*                                                                  *
+*              Copyright (c) PANORAMA Group 1991-2016              *
+*                      All Rights Reserved                         *
+*                                                                  *
+********************************************************************
+*                                                                  *
+*                     FOR WINDOWS & LINUX                          *
+*                                                                  *
+********************************************************************
+*                                                                  *
+*        нохяюмхе хдемрхтхйюрнпнб яннаыемхи дкъ mapErrorMessage    *
+*                                                                  *
+*******************************************************************/
+
+#if !defined(MAPERROR_RH)
+#define MAPERROR_RH
+#define MAPERR_RH
+
+// --------------------------------------------------------------
+//  хдемрхтхйюрнпш ньханй напюанрйх щкейрпнммни йюпрш
+// --------------------------------------------------------------
+
+#define IDS_OK                   1  // мер ньханй
+#define IDS_MEM_ALLOC        60001  // ньхайю бшдекемхъ оюлърх
+#define IDS_MEMORY           60001  // ньхайю бшдекемхъ оюлърх
+#define IDS_DISK_ALLOC       60002  // мер леярю мю дхяйе
+#define IDS_READ             60003  // ньхайю времхъ тюикю
+#define IDS_WRITE            60004  // ньхайю опх гюохях мю дхяй
+#define IDS_STRUCT           60005  // ньхайю ярпсйрспш дюммшу
+#define IDS_OPEN             60006  // ньхайю нрйпшрхъ тюикю
+#define IDS_FILE_NOT_FOUND   60007  // тюик ме мюидем
+#define IDS_PATH_NOT_FOUND   60008  // осрэ ме мюидем
+#define IDS_FILE_EXIST       60009  // тюик сфе ясыеярбсер
+#define IDS_CLOSE            60010  // ньхайю гюйпшрхъ тюикю
+#define IDS_CREATE           60011  // ньхайю янгдюмхъ тюикю
+#define IDS_CREATEOLD        600011 // ньхайю янгдюмхъ тюикю
+#define IDS_LOCK             60012  // тюик гюмър якхьйнл днкцн
+#define IDS_WAIT             60013  // ноепюжхъ ме лнфер ашрэ бшонкмемю б дюммши лнлемр
+#define IDS_CREATEDIALOG     60014  // ньхайю опх бшгнбе дхюкнцю
+#define IDS_DOERROR          60015  // ньхайю опх бшвхякемхъу
+#define IDS_RSCOPEN          60016  // ньхайю нрйпшрхъ тюикю RSC
+
+#define IDS_FILE_MANY        60020  // якхьйнл лмнцн нрйпшршу тюикнб
+#define IDS_SOCKETERROR      60021  // ньхайю оепедювх дюммшу вепег янйер
+#define IDS_OLD_VERSION      60030  // сярюпебьюъ бепяхъ дюммшу
+#define IDS_MODULE           60031  // меянбоюдемхе бепяхх MAPACCES.DLL
+#define IDS_SERVERVERSION    60032  // сярюпебьюъ бепяхъ яепбепю, йнлюмдю ме онддепфхбюеряъ
+
+#define IDS_PARM             60040  // ньхайю бундмшу оюпюлерпнб
+#define IDS_ACCESS           60050  // мер опюб днярсою
+#define IDS_COPYRIGHT        60060  // мер опюб йнохпнбюмхъ
+#define IDS_LOADPROGRAM      60070  // ньхайю опх гюосяйе опнцпюллш
+
+#define IDS_PROJECTTYPE      60100  // ньханвмши рхо опнейжхх
+#define IDS_PROJECTPARM      60101  // ньханвмше дюммше н опнейжхх
+
+#define IDS_OUTSIDE          60102  // назейр гю опедекюлх пюинмю
+#define IDS_APPENDOBJECT     60103  // ньхайю опх днаюбкемхх назейрю
+#define IDS_RSCSTYLE         60104  // ньхайю янярнъмхъ йкюяяхтхйюрнпю
+#define IDS_NOTFIND          60105  // йнд/гмювемхе ме мюидемн
+#define IDS_CANCEL           60106  // опхмсдхрекэмне гюбепьемхе пюанрш
+#define IDS_LOADLIBRARY      60107  // ньхайю гюцпсгйх ахакхнрейх
+#define IDS_ENTRYLIBRARY     60108  // ньхайю онхяйю рнвйх бундю
+#define IDS_POINTLIMIT       60109  // вхякн рнвей анкэье дносярхлнцн
+
+#define IDS_DATANOCROSS      60110  // лерпхйю назейрнб ме оепеяейюеряъ
+#define IDS_DATANOADJUST     60111  // лерпхйю хяундмнцн назейрю мегюлймсрю
+#define IDS_DATARESULTLIMIT  60112  // вхякн рнвей назейрю-пегскэрюрю анкэье дносярхлнцн
+#define IDS_DATARESULTERROR  60113  // лерпхйю пегскэрхпсчыецн назейрю ньханвмю
+
+// -------------------------------------------------------------------
+//  хдемрхтхйюрнпш ньханй напюанрйх йкюяяхтхйюрнпю щкейрпнммни йюпрш
+//              Я 60200  ОН 60299
+// --------------------------------------------------------------------
+#define IDS_RSCAPPENDEXISTOBJECT  60200  // оношрйю днаюбхрэ хлечыхияъ назейр
+#define IDS_RSCAPPENDOBJECTERROR  60201  // ньхайю опх днаюбкемхх назейрю
+#define IDS_RSCSTRUCTOBJECTERROR  60202  // ньхайю ярпсйрспш назейрю
+#define IDS_RSCEXITSEGMENTERROR   60203  // оношрйю гюохяюрэ онбрнпмне хлъ якнъ
+#define IDS_RSCEXITSEMANTICERROR  60204  // оношрйю гюохяюрэ онбрнпмне хлъ яелюмрхйх
+#define IDS_RSCSEMANTICCODEERROR  60205  // оношрйю гюохяюрэ онбрнпмне хлъ якнъ
+#define IDS_RSCSEMANTICCODECHANGE 60206  // мекэгъ хглемърэ йнд яелюмрхйх,нмю наъ-
+                                         // гюрекэмю дкъ назейрнб кхан бкхъер мю
+                                         // бхд
+#define IDS_RSCSEMANTICCODEREPLY  60207  // онбрнпмши йнд яелюмрхйх
+#define IDS_RSCSEMANTICTYPECHANGE 60208  // мекэгъ хглемърэ рхо - яелюмрхйю бкхъер
+                                         // мю бхд назейрнб
+#define IDS_RSCSEMANTICREPLYCHANGE 60209 // мекэгъ хглемърэ онбрнпъелнярэ - яелюмрхйю
+                                         // бкхъер мю бхд назейрнб
+#define IDS_RSCSEMANTICDEFCHANGE   60210 // ме янцкюянбюммше слнквюмхъ
+
+// ньхайх опх бшвхякемхх тнплск
+#define IDS_FORMULESYNTAX          60220 // ньханвмши яхмрюйяхя
+#define IDS_FORMULESEMERROR        60221 // ньхайю гюохях яелюмрхйх 
+#define IDS_FORMULEBRACKETERROR    60222 // меяннрберярбхе яйнанй
+#define IDS_FORMULESIZEERROR       60223 // якхьйнл анкэьюъ тнплскю 
+#define IDS_FORMULECALCERROR       60224 // ньхайю опх бшвхякемхъу
+#define IDS_FORMULENAMEREPLY       60225 // онбрнпмне хлъ тнплскш
+
+
+#define IDS_SENDERROR              60301 // ньхайю оепедювх дюммшу вепег янйерш
+#define IDS_RECVERROR              60302 // ньхайю опхелю дюммшу вепег янйерш
+
+
+#endif
